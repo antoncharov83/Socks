@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Socks
+  datasource:
+    url: jdbc:postgresql://localhost:5432/socks
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  jpa:
+    hibernate:
+      ddl-auto: update
